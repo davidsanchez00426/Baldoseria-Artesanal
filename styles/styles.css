@@ -98,12 +98,12 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 850px;
     flex-wrap: wrap;
 }
 
 .centropreguntas {
-    height: auto;
+    height: 800px;
     display: grid;
 }
 
@@ -112,7 +112,7 @@ ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-content: center;
-    height: auto;
+    height: 200px;
 }
 
 .derechos, .medellin {
