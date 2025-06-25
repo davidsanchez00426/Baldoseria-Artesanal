@@ -1,0 +1,251 @@
+@font-face {
+    font-family: david;
+    src: url(../fjallaone-regular.ttf);
+}
+
+
+/* para formatear el archivo y que quede en cero */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.inicialt{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: auto;
+
+}
+
+.logo1{
+    height: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.px{
+    display: flex;
+    font-size: 100px
+}
+
+.headerprincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+h1{
+    color: chocolate;
+    text-align: center;
+    font-family: david;
+}
+
+.menu{
+    text-align: right;
+}
+
+ul li a{
+    text-decoration: none;
+    color: darkslategray;
+    font-family: david;
+    font-size: medium;
+    justify-content: center;
+}
+
+.img1{
+    height: 330px;
+    width: 450px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.img2{
+    height: 330px;
+    width: 450px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.vid1{
+    height: 330px;
+    width: 450px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.map1{
+    height: 330px;
+    width: 450px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.arriba{
+    background-color: bisque;
+}
+
+.mitad{
+    background-color: rgb(173, 110, 87);
+}
+
+.centropreguntas{
+    height: 441px;
+    display: grid;
+}
+
+.uni{
+    background-color: gray;
+}
+
+.derechos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: right;
+}
+
+.medellin{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center
+}
+
+
+.items1{
+    width: 400px;
+}
+
+.t1{
+    height: 300px;
+    margin-right: 25px;
+}
+
+.t2{
+    height: 450px;
+    margin-right: 25px;
+}
+
+.t3{
+    height: 300px;
+    margin-right: 25px;
+}
+
+.tienda1{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: chocolate;
+    text-align: center;
+    font-family: david;
+}
+
+.colorn{
+    background-color: rgb(184, 184, 153);
+}
+
+.parrafonosotros{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.manuydavid1{
+    display: grid;
+    justify-content: center
+}
+
+.manuydavid{
+    height: 450px;
+    margin-right: 25px;
+    box-shadow: 0 2px 10px royalblue;
+}
+
+.camino{
+    color: chocolate;
+    text-align: center;
+    font-family: david;
+}
+
+.pfinal{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.contactocolor{
+    background-color: cadetblue;
+}
+
+.listado{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    text-align: center;
+    height: 450px;
+}
+
+.fondopreguntas{
+    background-color: rgb(187, 176, 176);
+}
+
+.letrapreguntas{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+.uni{
+    height: 240px;
+}
+
+.mitad{
+    height: 460px;
+}
+
+.boton{
+    margin: 20px;
+    padding: 35px;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.redessoc{
+    display: flex;
+    justify-content: right;
+}
+
+.uni{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+
+}
+
+.mitad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 935px){
+    .inicialt {grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+a:visited{
+    color: rgb(4, 150, 70);
+}
+
+select{
+    color: rgb(107, 59, 218);
+}
+
+select:hover{
+    background-color: coral;
+}
+
