@@ -1,101 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imperfecto - preguntas</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>imperfecto - Preguntas</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body class="fondopreguntas">
 
-    <div class="arriba">
-    <header class="headerprincipal">   
-        <!-- contiene nuestra navegación, logo y titulo -->
-         <a href="../index.html">
-             <img src="../assets/logo_imperfecto_minus.png" alt="Logo de imperfecto" class="logo1">
-         </a>
-         <!-- Rutas: ./ selecciono un archivo o carpeta dentro del directorio en el que estoy parado
-          Rutas: ../ retrocede una carpeta y luego nos lista los archivos y carpetas disponibles -->
-          <h1 class="px">imperfecto</h1>
-          <nav class="menu">
-            <ul>
-                <li class="enlace">
-                    <a href="../pages/tienda.html">Tienda</a>
-                </li>
-                <li class="enlace">
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="enlace">
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li class="enlace">
-                    <a href="../pages/preguntas.html">Pregutas frecuentes</a>
-                </li>
+  <div class="arriba">
+    <header class="headerprincipal">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/logo_imperfecto_minus.png" alt="Logo de imperfecto" class="logo1" />
+          </a>
+
+          <!-- Título -->
+          <h1 class="px mb-0 d-none d-lg-block">imperfecto</h1>
+
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú -->
+          <div class="collapse navbar-collapse justify-content-end menu" id="menuPrincipal">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item enlace">
+                <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item enlace">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item enlace">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item enlace">
+                <a class="nav-link" href="../pages/preguntas.html">Preguntas frecuentes</a>
+              </li>
             </ul>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
+  </div>
+
+  <main class="container py-4 centropreguntas">
+    <h2>PREGUNTAS FRECUENTES</h2>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            ¿Todas las baldosas son del mismo tamaño?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            ¿Puedo escoger el color de mis baldosas?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, puedes personalizar el color de tus baldosas...
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            ¿Tienen diseños de temporada?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Lanzamos colecciones según la temporada del año...
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            ¿Qué métodos de pago reciben?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Aceptamos pagos con tarjeta, transferencia, Nequi y más.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            ¿En qué parte de Colombia están ubicados?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Estamos ubicados en Medellín, Colombia.
+          </div>
+        </div>
+      </div>
     </div>
 
-    <main class="centropreguntas">
-
-    <!-- Respueta a preguntas más frecuentes -->
-     <h2>PREGUNTAS FRECUENTES</h2>
-    <summary class="letrapreguntas">¿todas las baldosas son del mismo tamaño?:
-            <details>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem modi ipsam dolor eos fuga et voluptas quae expedita pariatur, perferendis in fugiat atque quam harum animi repellendus laboriosam quod facere?
-            </details>
-    </summary>
-
-    <summary class="letrapreguntas">¿Puedo escoger el color de mis baldosas?:
-            <details>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem modi ipsam dolor eos fuga et voluptas quae expedita pariatur, perferendis in fugiat atque quam harum animi repellendus laboriosam quod facere?
-            </details>
-    </summary>
-    
-    <summary class="letrapreguntas">¿Tienen diseños de temporada?:
-            <details>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem modi ipsam dolor eos fuga et voluptas quae expedita pariatur, perferendis in fugiat atque quam harum animi repellendus laboriosam quod facere?
-            </details>
-    </summary>
-
-    <summary class="letrapreguntas">¿Qué metodos de pago reciben?:
-            <details>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem modi ipsam dolor eos fuga et voluptas quae expedita pariatur, perferendis in fugiat atque quam harum animi repellendus laboriosam quod facere?
-            </details>
-    </summary>
-
-    <summary class="letrapreguntas">¿En qué parte de Colombia están ubicados?:
-            <details>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem modi ipsam dolor eos fuga et voluptas quae expedita pariatur, perferendis in fugiat atque quam harum animi repellendus laboriosam quod facere?
-            </details>
-    </summary>
-
-    </main>
-
-    <!-- Botón para regresar a la página principal -->
+    <br>
     <a href="../index.html">Regresar a home</a>
+  </main>
 
-    <footer class="uni">
-        <!-- contiene los derechos reservados y las redes sociales -->
-         <div class="derechos">
-            <p> Derechos reservados - 2025 ©️</p>
-         </div>
-         <div class="medellin">
-            <p>Medellín, Colombia</p>
-         </div>
-         <div class="redessoc">
-         <a href="https://es-la.facebook.com/login/device-based/regular/login/" class="facebook">
-             <img src="../assets/facebook_fly.png" alt="Logo de facebook" id="logo2">
-         </a>
-         <a href="https://www.instagram.com/accounts/login/?source=auth_switcher&locale=es_ES" class="facebook">
-             <img src="../assets/instagram_fly.png" alt="Logo de instagram" id="logo3">
-         </a>
-         <a href="https://web.whatsapp.com/" class="facebook">
-             <img src="../assets/whatsapp_fly.png" alt="Logo de whatsapp" id="logo4">
-         </a>
+  <footer class="uni">
+    <div class="derechos">
+      <p> Derechos reservados - 2025 ©️</p>
+    </div>
+    <div class="medellin">
+      <p>Medellín, Colombia</p>
+    </div>
+    <div class="redessoc">
+      <a href="https://es-la.facebook.com/login/device-based/regular/login/" class="facebook">
+        <img src="../assets/facebook_fly.png" alt="Logo de facebook" id="logo2" />
+      </a>
+      <a href="https://www.instagram.com/accounts/login/?source=auth_switcher&locale=es_ES" class="facebook">
+        <img src="../assets/instagram_fly.png" alt="Logo de instagram" id="logo3" />
+      </a>
+      <a href="https://web.whatsapp.com/" class="facebook">
+        <img src="../assets/whatsapp_fly.png" alt="Logo de whatsapp" id="logo4" />
+      </a>
+    </div>
+  </footer>
 
 
-         </div>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
